@@ -1,0 +1,32 @@
+@select-list-background: @abbey;
+@select-list-color: @silver;
+@select-list-shadow: fade(@black, 50%);
+@select-list-editor-color: @silver;
+@select-list-editor-background: @abbey;
+@select-list-editor-border: @horizon;
+@select-list-editor-shadow: fade(@select-list-editor-border, 50%);
+
+@select-list-from-top-top: 150px;
+
+.select-list {
+
+  background: @select-list-background;
+  color: @select-list-color;
+  box-shadow: 0 7px 10px 0 @select-list-shadow;
+
+  .editor {
+    border: 1px solid @select-list-editor-border;
+    box-shadow: 0 0 5px 0 @select-list-editor-shadow;
+    border-radius: 2px;
+    color: @select-list-editor-color;
+    background: @select-list-editor-background;
+    line-height: 18px;
+    padding: 0 4px;
+  }
+
+  &.from-top {
+    top: @select-list-from-top-top;
+  }
+  //9133858
+
+}

@@ -1,0 +1,25 @@
+@tree-view-background: @abbey;
+@tree-view-color: @silver;
+
+.tree-view {
+
+  background: @tree-view-background;
+  color: @tree-view-color;
+  font-size: 12px;
+
+  .header {
+    font-weight: bold;
+
+    &:before {
+    	width: 0;
+      height: 0;
+    }
+  }
+
+  .entries {
+    .header {
+      font-weight: inherit;
+    }
+  }
+
+}

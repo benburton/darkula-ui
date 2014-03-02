@@ -1,0 +1,40 @@
+.tab-bar {
+  color: @silver;
+  background-image: -webkit-linear-gradient(top, #4f5051, #4f4f4f);
+  border-top: 1px solid @dove-gray;
+  border-bottom: 1px solid #454648;
+  padding-bottom: 4px;
+  display: block;
+  clear: both;
+
+  .tab {
+    border-right: 1px solid #343638;
+    border-left: 1px solid #6e6e70;
+    background: @abbey;
+    position: relative;
+    padding: 4px 24px 4px 20px !important;
+    border-bottom: 1px solid #343638;
+
+    &.active {
+      background-image: -webkit-linear-gradient(top, #656565, #4f4f4f);
+      border-bottom: none;
+    }
+
+    .title {
+      text-shadow: 0 1px #424242;
+      width: 100%;
+    }
+
+    .close-icon {
+      position: absolute;
+      top: 4px;
+      right: 5px;
+
+      &:before {
+        font-weight: normal;
+        color: #838383;
+      }
+    }
+  }
+
+}
